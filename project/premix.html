@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" co
+    ntent="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/premix.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-black">
+        <div class="container">
+          <a class="nadpis1">
+          <a class="navbar-brand fw-bolder h1" href="/index.html">SEVENTYEIGHT</a>
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link "  href="/index.html">DOMOV</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  +PROJEKTY
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/projectexc530.html">KTM EXC 530</a></li>
+                  <li><a class="dropdown-item" href="#">YAMAHA Booster</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/formular.html">FORMULÁR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/premix.html">PREMIX</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="obsah1">
+        <h2 class="nadpis2">Kalkulačka na výpočet pomeru oleja a benzínu</h2>
+        <p class="text">Ako už isto vieš, do 2taktných motor sa musí spolu s benzínom liať aj olej. Ak by si tak nespravil motor by sa takmer hneď zadrel. Naša kalkulačka ti vypočíta presné množstvo oleja, ktoré je potrebné zamiešať do benzínu. </p>
+      </div>
+    
+
+    <div class="obsah">
+    
+    <form name="premix1">    
+        <div class="litrex">
+        <label for="litre">Litre:</label>
+        <input  type="number" name="litre">
+        </div>
+        <br>
+
+        <div class="litrex">
+        <label for="pomer">Pomer:</label>
+        <input type="number" name="pomer">:1
+    </div>
+        <input class="buttonx" type="button" value="Calculate" onclick="premix()">
+        <div class="vysledok1">
+        <label class="vysledokk" for="vysledok">Budeš potrebovať:</label>
+        <input class="vysledokx" type="text" name="vysledok">
+    </div>
+    </form>
+</div>
+
+
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container">
+    <div class="containerx">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Telefón</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="tel:+421123123">+421123123</a>
+          </li>
+          <li>
+            <a href="tel:+421123123">+421123123</a>
+          </li>
+          <li>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">E-Mail</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <div>Support:
+            <a href="gmail@gmail.com">support@gmail.com</a>
+          <div>
+          </li>
+          <li>
+            <div>Info:
+            <a href="gmail@gmail.com">info@gmail.com</a>
+          <div>
+          </li>
+    
+
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+</div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color:black">
+   <div class="footerx">© 2022 Copyright: Martin Molnár</div> 
+  </div>
+  <!-- Copyright -->
+</footer>
+    <script src="/js/premix.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
